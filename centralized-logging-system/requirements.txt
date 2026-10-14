@@ -1,5 +1,4 @@
 # Centralized Logging System Dependencies
-# Compatible with Python 3.13 on Windows
-
 Flask>=3.0.0,<4.0.0
+gunicorn>=22.0.0
 pytest>=8.0.0,<10.0.0

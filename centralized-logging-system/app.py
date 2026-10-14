@@ -234,12 +234,13 @@ app = create_app()
 def main() -> None:
     """Run Flask development server."""
     port = int(os.getenv("PORT", "5000"))
+    host = os.getenv("HOST", "0.0.0.0")
     debug_mode = os.getenv("FLASK_DEBUG", "false").lower() in ("true", "1")
     print(f"\n=======================================================")
     print(f"  Centralized Logging System - Web Dashboard")
-    print(f"  Open in your browser: http://127.0.0.1:{port}")
+    print(f"  Server listening on: http://{host}:{port}")
     print(f"=======================================================\n")
-    app.run(host="127.0.0.1", port=port, debug=debug_mode)
+    app.run(host=host, port=port, debug=debug_mode)
 
 
 if __name__ == "__main__":

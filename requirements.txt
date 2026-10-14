@@ -1,0 +1,4 @@
+# Centralized Logging System Dependencies
+Flask>=3.0.0,<4.0.0
+gunicorn>=22.0.0
+pytest>=8.0.0,<10.0.0
